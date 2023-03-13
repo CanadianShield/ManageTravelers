@@ -1,3 +1,9 @@
+Table of Contents
+- [Introduction](#introduction)
+- [Conditional Access](#conditional-access)
+  - [Prerequisites](#prerequisites)
+
+
 # Introduction
 
 We often get questions like “How can I give access to travelers without opening access to everybody?”, “Can we stop our travelers from downloading files outside our countries of operation?”, “How can I ensure that my travelers know about our internal travel policies?”, “I don’t want to have a big impact on our helpdesk/identity management team, would there be a solution that reduces that impact?” 
@@ -49,15 +55,15 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 ## Named Locations
 
 1. We need to create the different Countries Location for every continent. 
-*a.  You must ensure that a country is not part of two continents Locations. 
+- You must ensure that a country is not part of two continents Locations. 
 2. We create a new Countries Location for anonymous countries/regions. 
-..a. We need to check the “Include unknown countries/regions”. 
+- We need to check the “Include unknown countries/regions”. 
 i. IPv6 addresses fall into that category, see step 4. 
-b. We also need to have at least one country selected. 
+- We also need to have at least one country selected. 
 3. We need to create a Countries Location for our countries of operation. 
 4. We create an IP range's location containing the IPv6 addresses of our countries of operation. 
-a. You can split in multiple Named Locations to make it easier to manage. 
-b. It must not be as a Trusted Location.
+- You can split in multiple Named Locations to make it easier to manage. 
+- It must not be as a Trusted Location.
 
 
 
