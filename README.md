@@ -1,16 +1,19 @@
-Table of Contents
+# Table of Contents
 - [Introduction](#introduction)
 - [Conditional Access](#conditional-access)
-  - [Prerequisites](#prerequisites)
+    - [Prerequisites](#prerequisites)
+    - [Named Location](#named-locations)
+    - [Exclusion Group](#named-locations)
+- [Identity Governance](#identity-governance)
 
 
 # Introduction
 
-We often get questions like “How can I give access to travelers without opening access to everybody?”, “Can we stop our travelers from downloading files outside our countries of operation?”, “How can I ensure that my travelers know about our internal travel policies?”, “I don’t want to have a big impact on our helpdesk/identity management team, would there be a solution that reduces that impact?” 
+We often get questions like *“How can I give access to travelers without opening access to everybody?”*, *“Can we stop our travelers from downloading files outside our countries of operation?”*, *“How can I ensure that my travelers know about our internal travel policies?”*, *“I don’t want to have a big impact on our helpdesk/identity management team, would there be a solution that reduces that impact?”* 
 
 # Conditional Access
 
-Let’s start with the question “How can I give access to travelers without opening access to everybody?” 
+Let’s start with the question *“How can I give access to travelers without opening access to everybody?”*
 
 An effective way to carry out that goal would be to create a Conditional Access Policy (CAP) that blocks sign-ins from anywhere except your operation countries and then use the exclusions on that CAP to allow people to sign-in from anywhere. 
 
@@ -18,13 +21,13 @@ This approach works quite well, but if we want to reduce the risk, would it not 
 - Continents (Africa, Antarctica, Asia, Europe, North America, Oceania, South America) 
 - Anonymous and blocked countries 
 
-The next question that we will solve is “Can we stop our travelers from downloading files outside our countries of operation?” 
+The next question that we will solve is *“Can we stop our travelers from downloading files outside our countries of operation?”* 
 
 We can do it by blocking the possibility to use the Modern and Desktop apps while outside the operation countries but allowing access from browsers in a session that does not have the possibility to download files. We will have one CAP for each of those requirements. 
 
 Note that a file already present on the user’s device will not be protected by this. The use of device encryption (ex: BitLocker) and DLP (ex: Azure Information Protection) is recommended.  
 
-“How do I ensure that my travelers know about our internal travel policies?”, this question can be answered in many ways: 
+*“How do I ensure that my travelers know about our internal travel policies?”*, this question can be answered in many ways: 
 - a member of the security team could send an email before the travel. 
 - it could be part of the onboarding process for new employees. 
 - etc. 
@@ -66,18 +69,23 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
     - It must not be as a Trusted Location.
 
 1. Example for Europe
+
 ![image](./images/NamedLocation-Example-Europe.png)
 
 2. Example of anonymous and non-allowed
+
 ![image](./images/NamedLocation-Example-Anonymous.png)
 
 3. Example of Operation countries
+
 ![image](./images/NamedLocation-Example-OperationCountries.png)
 
 4. Example of Operation countries range of IPv6
+
 ![image](./images/NamedLocation-Example-OperationCountries-ipv6.png)
 
 5. View of all locations created
+
 ![image](./images/NamedLocation-Example-AllLocations.png)
 
 
@@ -91,7 +99,7 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
     - No members should be added to the groups.
 - We must add the Everyone group as part of all the continent groups.
 - A group for Anonymous and blocked regions/countries can be added but is not recommended since no exclusions should be allowed.
-![image](./images/Group-Allow-Europe.png)
+![image](./images/ExclusionGroup-Creation-Europe.png)
 
 
 
@@ -105,6 +113,7 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 # Credit
 
 Mathias Dumont
+
 Paul Morin
 
 
