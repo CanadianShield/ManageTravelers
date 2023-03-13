@@ -99,8 +99,18 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
     - No members should be added to the groups.
 - We must add the Everyone group as part of all the continent groups.
 - A group for Anonymous and blocked regions/countries can be added but is not recommended since no exclusions should be allowed.
+
+1. Example of exclusion group for Europe
+
 ![image](./images/ExclusionGroup-Creation-Europe.png)
 
+2. All exclusion group
+
+![image](./images/ExclusionGroup-All.png)
+
+3. Membership of exclusion group for Everywhere
+
+![image](./images/ExclusionGroup-Membership-Everywhere.png)
 
 
 
