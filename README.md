@@ -1,17 +1,19 @@
 # Table of Contents
 - [Introduction](#introduction)
-- [Conditional Access](#conditional-access)
+- [Conditional Access](#conditional-access-configuration)
     - [Prerequisites](#prerequisites)
     - [Named Location](#named-locations)
     - [Exclusion Group](#named-locations)
-- [Identity Governance](#identity-governance)
+    - [Terms of use](#terms-of-use)
+    - [Conditional Access Policies](#conditional-access-policies)
+- [Access Package](#access-package-configuration)
 
 
 # Introduction
 
 We often get questions like *“How can I give access to travelers without opening access to everybody?”*, *“Can we stop our travelers from downloading files outside our countries of operation?”*, *“How can I ensure that my travelers know about our internal travel policies?”*, *“I don’t want to have a big impact on our helpdesk/identity management team, would there be a solution that reduces that impact?”* 
 
-# Conditional Access
+# Conditional Access Configuration
 
 Let’s start with the question *“How can I give access to travelers without opening access to everybody?”*
 
@@ -113,10 +115,18 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 ![image](./images/ExclusionGroup-Membership-Everywhere.png)
 
 
+## Terms of use
+
+
+## Conditional Access Policies
 
 
 
-# Identity Governance
+
+
+
+
+# Access Package Configuration
 
 
 
