@@ -29,11 +29,35 @@ We want this step to be as easy as possible for everybody so we will create Term
 Here's a diagram showing the access for 4 different cases as examples: 
 ![image](./images/CAP-diagram.png)
 
+- The first column shows a regular user without exclusions; in that case the user only has access from operation countries. 
+- The second column shows a user with an exclusion, allowing them an access from Europe; in that case the user has the same access as the first column plus a web access without download from Europe, the user must agree to a term of use the first time that they will sign-in from outside an operation country. 
+- The third column shows a user with two exclusions, allowing them an access from Europe and Asia; in that case the user has the same access as the first column plus a web access without download from Europe and Asia, the user must agree to a term of use the first time that they will sign-in from outside an operation country. 
+- The last column shows a user with an exclusion, allowing them an access from anywhere except anonymous and blocked locations; in that case the user has the same access as the first column plus a web access without download from anywhere except anonymous and blocked locations, the user must agree to a term of use the first time that they will sign-in from outside an operation country. 
 
+There are other CAPs that would be recommended (asking for MFA, blocking legacy authentications, blocking access to certain apps, checking device compliance, self-remediation or blocking on user and sign-in risks, etc.) but this blog won’t cover them. 
 
+## Prerequisites
 
+1. The following roles for configuration: 
+- Conditional Access Administrator or Security Administrator (for Conditional Access, Named Location, Terms of use) 
+- And Groups Administrator or User Administrator (for Exclusion groups) 
+- Or Global Administrator 
+2. A Term of use must have been created and be available in PDF.
+3. Azure AD Premium P1 is needed for every user that will use the CAPs. 
+4. Microsoft Defender for Cloud Apps (included in EMS-E5) is needed for every user that will use the block download functionality. 
 
+## Named Locations
 
+1. We need to create the different Countries Location for every continent. 
+a. You must ensure that a country is not part of two continents Locations. 
+2. We create a new Countries Location for anonymous countries/regions. 
+a. We need to check the “Include unknown countries/regions”. 
+i. IPv6 addresses fall into that category, see step 4. 
+b. We also need to have at least one country selected. 
+3. We need to create a Countries Location for our countries of operation. 
+4. We create an IP range's location containing the IPv6 addresses of our countries of operation. 
+a. You can split in multiple Named Locations to make it easier to manage. 
+b. It must not be as a Trusted Location.
 
 
 
