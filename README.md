@@ -18,11 +18,41 @@ We can do it by blocking the possibility to use the Modern and Desktop apps whil
 
 Note that a file already present on the user’s device will not be protected by this. The use of device encryption (ex: BitLocker) and DLP (ex: Azure Information Protection) is recommended.  
 
+“How do I ensure that my travelers know about our internal travel policies?”, this question can be answered in many ways: 
+- a member of the security team could send an email before the travel. 
+- it could be part of the onboarding process for new employees. 
+- etc. 
+
+We want this step to be as easy as possible for everybody so we will create Terms of use that the user will need to read and accept the first time they sign-in outside the operation countries. 
+
+ 
+Here's a diagram showing the access for 4 different cases as examples: 
+![image](./images/CAP-diagram.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Identity Governance
 
 
+
+# Credit
+
+Mathias Dumont (Microsoft)
+
+Paul Morin (Microsoft)
 
 
 
