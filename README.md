@@ -44,30 +44,50 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 
 ## Prerequisites
 
-1. The following roles for configuration: 
-  - Conditional Access Administrator or Security Administrator (for Conditional Access, Named Location, Terms of use) 
-  - And Groups Administrator or User Administrator (for Exclusion groups) 
-  - Or Global Administrator 
-2. A Term of use must have been created and be available in PDF.
-3. Azure AD Premium P1 is needed for every user that will use the CAPs. 
-4. Microsoft Defender for Cloud Apps (included in EMS-E5) is needed for every user that will use the block download functionality. 
+- The following roles for configuration: 
+    - Conditional Access Administrator or Security Administrator (for Conditional Access, Named Location, Terms of use) 
+    - And Groups Administrator or User Administrator (for Exclusion groups) 
+    - Or Global Administrator 
+- A Term of use must have been created and be available in PDF.
+- Azure AD Premium P1 is needed for every user that will use the CAPs. 
+- Microsoft Defender for Cloud Apps (included in EMS-E5) is needed for every user that will use the block download functionality. 
 
 ## Named Locations
 
 - We need to create the different Countries Location for every continent. 
-  - You must ensure that a country is not part of two continents Locations. 
+    - You must ensure that a country is not part of two continents Locations. 
 - We create a new Countries Location for anonymous countries/regions. 
-  - We need to check the “Include unknown countries/regions”. 
-    - IPv6 addresses fall into that category, see step 4. 
-  - We also need to have at least one country selected. 
+    - We need to check the “Include unknown countries/regions”. 
+        - IPv6 addresses fall into that category, see step 4. 
+    - We also need to have at least one country selected. 
 - We need to create a Countries Location for our countries of operation. 
 - We create an IP range's location containing the IPv6 addresses of our countries of operation. 
-  - You can split in multiple Named Locations to make it easier to manage. 
-  - It must not be as a Trusted Location.
+    - You can split in multiple Named Locations to make it easier to manage. 
+    - It must not be as a Trusted Location.
+
+1. Example for Europe
+![image](./images/NamedLocation-Example-Europe.png)
+2. Example of anonymous and non-allowed
+![image](./images/NamedLocation-Example-Anonymous.png)
+3. Example of Operation countries
+![image](./images/NamedLocation-Example-OperationCountries.png)
+4. Example of Operation countries range of IPv6
+![image](./images/NamedLocation-Example-OperationCountries-ipv6.png)
+5. View of all locations created
+![image](./images/NamedLocation-Example-AllLocations.png)
 
 
-
-
+## Exclusion groups
+- We will then create an exclusion group for every continent and for Everywhere.
+    - The groups must be security groups.
+    - The groups must be Assigned.
+    - The groups should have an Owner.
+    - The groups should not be “Azure AD roles can be assigned to the group”.
+    - A good description should be considered.
+    - No members should be added to the groups.
+- We must add the Everyone group as part of all the continent groups.
+- A group for Anonymous and blocked regions/countries can be added but is not recommended since no exclusions should be allowed.
+![image](./images/Group-Allow-Europe.png)
 
 
 
