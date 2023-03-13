@@ -45,9 +45,9 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 ## Prerequisites
 
 1. The following roles for configuration: 
-- Conditional Access Administrator or Security Administrator (for Conditional Access, Named Location, Terms of use) 
-- And Groups Administrator or User Administrator (for Exclusion groups) 
-- Or Global Administrator 
+  - Conditional Access Administrator or Security Administrator (for Conditional Access, Named Location, Terms of use) 
+  - And Groups Administrator or User Administrator (for Exclusion groups) 
+  - Or Global Administrator 
 2. A Term of use must have been created and be available in PDF.
 3. Azure AD Premium P1 is needed for every user that will use the CAPs. 
 4. Microsoft Defender for Cloud Apps (included in EMS-E5) is needed for every user that will use the block download functionality. 
@@ -55,15 +55,15 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 ## Named Locations
 
 1. We need to create the different Countries Location for every continent. 
-- You must ensure that a country is not part of two continents Locations. 
+  - You must ensure that a country is not part of two continents Locations. 
 2. We create a new Countries Location for anonymous countries/regions. 
-- We need to check the “Include unknown countries/regions”. 
-i. IPv6 addresses fall into that category, see step 4. 
-- We also need to have at least one country selected. 
+  - We need to check the “Include unknown countries/regions”. 
+    - IPv6 addresses fall into that category, see step 4. 
+  - We also need to have at least one country selected. 
 3. We need to create a Countries Location for our countries of operation. 
 4. We create an IP range's location containing the IPv6 addresses of our countries of operation. 
-- You can split in multiple Named Locations to make it easier to manage. 
-- It must not be as a Trusted Location.
+  - You can split in multiple Named Locations to make it easier to manage. 
+  - It must not be as a Trusted Location.
 
 
 
