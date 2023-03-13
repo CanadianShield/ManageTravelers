@@ -54,14 +54,14 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 
 ## Named Locations
 
-1. We need to create the different Countries Location for every continent. 
+- We need to create the different Countries Location for every continent. 
   - You must ensure that a country is not part of two continents Locations. 
-2. We create a new Countries Location for anonymous countries/regions. 
+- We create a new Countries Location for anonymous countries/regions. 
   - We need to check the “Include unknown countries/regions”. 
     - IPv6 addresses fall into that category, see step 4. 
   - We also need to have at least one country selected. 
-3. We need to create a Countries Location for our countries of operation. 
-4. We create an IP range's location containing the IPv6 addresses of our countries of operation. 
+- We need to create a Countries Location for our countries of operation. 
+- We create an IP range's location containing the IPv6 addresses of our countries of operation. 
   - You can split in multiple Named Locations to make it easier to manage. 
   - It must not be as a Trusted Location.
 
