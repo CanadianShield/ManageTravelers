@@ -67,12 +67,16 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 
 1. Example for Europe
 ![image](./images/NamedLocation-Example-Europe.png)
+
 2. Example of anonymous and non-allowed
 ![image](./images/NamedLocation-Example-Anonymous.png)
+
 3. Example of Operation countries
 ![image](./images/NamedLocation-Example-OperationCountries.png)
+
 4. Example of Operation countries range of IPv6
 ![image](./images/NamedLocation-Example-OperationCountries-ipv6.png)
+
 5. View of all locations created
 ![image](./images/NamedLocation-Example-AllLocations.png)
 
@@ -100,9 +104,8 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 
 # Credit
 
-Mathias Dumont (Microsoft)
-
-Paul Morin (Microsoft)
+Mathias Dumont
+Paul Morin
 
 
 
