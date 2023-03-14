@@ -178,7 +178,7 @@ Membership of exclusion group for Everywhere
     - Grant: Your terms of use for travelers.
 
 <p align="center" width="100%">
-    <img width="33%" src="./images/ConditionalAccess-Termsofuse-1.png"> 
+    <img width="50%" src="./images/ConditionalAccess-Termsofuse-1.png"> 
 </p>
 <p align="center" width="100%">
     <img width="33%" src="./images/ConditionalAccess-Termsofuse-2.png"> 
