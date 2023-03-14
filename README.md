@@ -71,24 +71,29 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
     - It must not be as a Trusted Location.
 
 Example for Europe
-
-![image](./images/NamedLocation-Example-Europe.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/NamedLocation-Example-Europe.png"> 
+</p>
 
 Example of anonymous and non-allowed
-
-![image](./images/NamedLocation-Example-Anonymous.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/NamedLocation-Example-Anonymous.png"> 
+</p>
 
 Example of Operation countries
-
-![image](./images/NamedLocation-Example-OperationCountries.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/NamedLocation-Example-OperationCountries.png"> 
+</p>
 
 Example of Operation countries range of IPv6
-
-![image](./images/NamedLocation-Example-OperationCountries-ipv6.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/NamedLocation-Example-OperationCountries-ipv6.png"> 
+</p>
 
 View of all locations created
-
-![image](./images/NamedLocation-Example-AllLocations.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/NamedLocation-Example-AllLocations.png"> 
+</p>
 
 
 ## Exclusion groups
@@ -103,16 +108,19 @@ View of all locations created
 3. A group for Anonymous and blocked regions/countries can be added but is not recommended since no exclusions should be allowed.
 
 Example of exclusion group for Europe
-
-![image](./images/ExclusionGroup-Creation-Europe.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/ExclusionGroup-Creation-Europe.png"> 
+</p>
 
 All exclusion group
-
-![image](./images/ExclusionGroup-All.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/ExclusionGroup-All.png"> 
+</p>
 
 Membership of exclusion group for Everywhere
-
-![image](./images/ExclusionGroup-Membership-Everywhere.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/ExclusionGroup-Membership-Everywhere.png"> 
+</p>
 
 
 ## Terms of use
@@ -122,8 +130,9 @@ Membership of exclusion group for Everywhere
 4. Make sure that “Require users to expand the terms of use” is set to On.
 5. Select the expiration policy settings that you want to use.
 6. Select “Custom policy” since we will create the CAP later.
-
-![image](./images/TermsofUse-Creation.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/TermsofUse-Creation.png"> 
+</p>
 
 
 ## Conditional Access Policies
@@ -134,9 +143,12 @@ Membership of exclusion group for Everywhere
     - Conditions, Locations: Any locations, with exclusions for Operation countries and Operation countries’ IPv6.
     - Conditions, Client apps: Mobile apps and desktop clients.
     - Grant: Block access.
-
-![image](./images/ConditionalAccess-BlockMobile-OperationCountries.png)
-![image](./images/ConditionalAccess-BlockMobile-OperationCountries-CltApp.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/ConditionalAccess-BlockMobile-OperationCountries.png"> 
+</p>
+<p align="center" width="100%">
+    <img width="33%" src="./images/ConditionalAccess-BlockMobile-OperationCountries-CltApp.png"> 
+</p>
 
 2.	Create a CAP to block browser access from Anonymous and non-allowed countries/regions.
     - Users: All users – Break glass account should be excluded.
@@ -144,9 +156,12 @@ Membership of exclusion group for Everywhere
     - Conditions, Locations: Anonymous and non-allowed countries/regions.
     - Conditions, Client apps: Browser.
     - Grant: Block access.
-
-![image](./images/ConditionalAccess-BlockBrowser-Anonymous.png)
-![image](./images/ConditionalAccess-BlockBrowser-Anonymous-CltApp.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/ConditionalAccess-BlockBrowser-Anonymous.png"> 
+</p>
+<p align="center" width="100%">
+    <img width="33%" src="./images/ConditionalAccess-BlockBrowser-Anonymous-CltApp.png"> 
+</p>
 
 3.	Create CAPs to block browser access from a continent.
     - Users: All users excluding exclusion group for the continent – Break glass account should be excluded.
@@ -154,9 +169,12 @@ Membership of exclusion group for Everywhere
     - Conditions, Locations: continent location.
     - Conditions, Client apps: Browser.
     - Grant: Block access.
-
-![image](./images/ConditionalAccess-BlockBrowser-Continent-1.png)
-![image](./images/ConditionalAccess-BlockBrowser-Continent-2.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/ConditionalAccess-BlockBrowser-Continent-1.png"> 
+</p>
+<p align="center" width="100%">
+    <img width="33%" src="./images/ConditionalAccess-BlockBrowser-Continent-2.png"> 
+</p>
 
 4.	Repeat previous step for each continent.
 
@@ -166,7 +184,6 @@ Membership of exclusion group for Everywhere
     - Conditions, Locations: Any locations, with exclusions for Operation countries and Operation countries’ IPv6.
     - Conditions, Client apps: Browser.
     - Session: User Conditional Access App Control, Block downloads (Preview).
-
 <p align="center" width="100%">
     <img width="60%" src="./images/ConditionalAccess-BlockDownload-1.png"> 
 </p>
@@ -189,7 +206,7 @@ Membership of exclusion group for Everywhere
 
 Your Conditional Access policies should look like this:
 <p align="center" width="100%">
-    <img width="33%" src="./images/ConditionalAccess-All.png"> 
+    <img width="60%" src="./images/ConditionalAccess-All.png"> 
 </p>
 
 
