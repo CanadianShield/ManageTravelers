@@ -123,17 +123,17 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 5. Select the expiration policy settings that you want to use.
 6. Select “Custom policy” since we will create the CAP later.
 
-![image](./images/ExclusionGrouTermsofUse-Creation.png)
+![image](./images/TermsofUse-Creation.png)
 
 
 ## Conditional Access Policies
 
 1.	Create a CAP to block mobile apps and desktop clients outside Operation countries.
-    • Users: All users – Break glass account should be excluded.
-    • Cloud apps: All cloud apps.
-    • Conditions, Locations: Any locations, with exclusions for Operation countries and Operation countries’ IPv6.
-    • Conditions, Client apps: Mobile apps and desktop clients.
-    • Grant: Block access.
+    - Users: All users – Break glass account should be excluded.
+    - Cloud apps: All cloud apps.
+    - Conditions, Locations: Any locations, with exclusions for Operation countries and Operation countries’ IPv6.
+    - Conditions, Client apps: Mobile apps and desktop clients.
+    - Grant: Block access.
 
 ![image](./images/ConditionalAccess-BlockMobile-OperationCountries.png)
 ![image](./images/ConditionalAccess-BlockMobile-OperationCountries-CltApp.png)
