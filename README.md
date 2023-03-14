@@ -7,6 +7,13 @@
     - [Terms of use](#terms-of-use)
     - [Conditional Access Policies](#conditional-access-policies)
 - [Access Package](#access-package-configuration)
+    - [Prerequisites](#prerequisites-1)
+    - [Catalog](#catalog)
+- [User Experience](#user-experience)
+    - [User](#user)
+    - [Manager](#manager)
+    - [Approver](#approver)
+- [Success and Errors](#success-and-errors)
 
 
 # Introduction
@@ -210,14 +217,48 @@ Your Conditional Access policies should look like this:
 </p>
 
 
-
-
-
-
-
 # Access Package Configuration
 
+Now that we have a fully functional way to manage the travelers, let’s look at this question “I don’t want to have a big impact on our helpdesk/identity management team, would there be a solution that reduces that impact?”.
+The challenges that we have are:
+- We need a way for people to tell us that they will travel.
+- We need an approval process.
+- We have exclusion groups, but we don’t want users to stay in them after they come back.
+We will solve all those points with Entitlement management by automating the process. 
+- The process will be started by the user.
+- The approval will be a two-step approval with the people that need to be part of the decision, the user’s manager, and the security team.
+- The user will be removed automatically from the group at the end of their trip.
 
+## Prerequisites
+
+- One of the following roles for configuration:
+    - Identity Governance Administrator
+    - Global Administrator
+- Azure AD Premium P2 is needed for every user that will use the Access Packages.
+- Exclusion groups must have been created and assigned to the CAPs.
+- Users must have a manager assigned to them, if not a failover administrator will be used.
+
+
+## Catalog
+
+*In progress*
+
+
+# User experience
+
+Now let’s see what the experience is for the end users, managers, and security approvers.
+
+## User
+*In progress*
+
+## Manager
+*In progress*
+
+## Approver
+*In progress*
+
+# Success and Errors
+*In progress*
 
 # Credit
 
