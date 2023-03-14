@@ -177,13 +177,11 @@ Membership of exclusion group for Everywhere
     - Conditions, Client apps: Browser.
     - Grant: Your terms of use for travelers.
 
-![image](./images/ConditionalAccess-Termsofuse-1.png)
-
 <p align="center" width="100%">
+    <img width="33%" src="./images/ConditionalAccess-Termsofuse-1.png"> 
     <img width="33%" src="./images/ConditionalAccess-Termsofuse-2.png"> 
 </p>
 
-![image](./images/ConditionalAccess-Termsofuse-2.png)
 
 Your Conditional Access policies should look like this:
 
