@@ -59,58 +59,58 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 
 ## Named Locations
 
-- We need to create the different Countries Location for every continent. 
+1. We need to create the different Countries Location for every continent. 
     - You must ensure that a country is not part of two continents Locations. 
-- We create a new Countries Location for anonymous countries/regions. 
+2. We create a new Countries Location for anonymous countries/regions. 
     - We need to check the “Include unknown countries/regions”. 
         - IPv6 addresses fall into that category, see step 4. 
     - We also need to have at least one country selected. 
-- We need to create a Countries Location for our countries of operation. 
-- We create an IP range's location containing the IPv6 addresses of our countries of operation. 
+3. We need to create a Countries Location for our countries of operation. 
+4. We create an IP range's location containing the IPv6 addresses of our countries of operation. 
     - You can split in multiple Named Locations to make it easier to manage. 
     - It must not be as a Trusted Location.
 
-1. Example for Europe
+Example for Europe
 
 ![image](./images/NamedLocation-Example-Europe.png)
 
-2. Example of anonymous and non-allowed
+Example of anonymous and non-allowed
 
 ![image](./images/NamedLocation-Example-Anonymous.png)
 
-3. Example of Operation countries
+Example of Operation countries
 
 ![image](./images/NamedLocation-Example-OperationCountries.png)
 
-4. Example of Operation countries range of IPv6
+Example of Operation countries range of IPv6
 
 ![image](./images/NamedLocation-Example-OperationCountries-ipv6.png)
 
-5. View of all locations created
+View of all locations created
 
 ![image](./images/NamedLocation-Example-AllLocations.png)
 
 
 ## Exclusion groups
-- We will then create an exclusion group for every continent and for Everywhere.
+1. We will then create an exclusion group for every continent and for Everywhere.
     - The groups must be security groups.
     - The groups must be Assigned.
     - The groups should have an Owner.
     - The groups should not be “Azure AD roles can be assigned to the group”.
     - A good description should be considered.
     - No members should be added to the groups.
-- We must add the Everyone group as part of all the continent groups.
-- A group for Anonymous and blocked regions/countries can be added but is not recommended since no exclusions should be allowed.
+2. We must add the Everyone group as part of all the continent groups.
+3. A group for Anonymous and blocked regions/countries can be added but is not recommended since no exclusions should be allowed.
 
-1. Example of exclusion group for Europe
+Example of exclusion group for Europe
 
 ![image](./images/ExclusionGroup-Creation-Europe.png)
 
-2. All exclusion group
+All exclusion group
 
 ![image](./images/ExclusionGroup-All.png)
 
-3. Membership of exclusion group for Everywhere
+Membership of exclusion group for Everywhere
 
 ![image](./images/ExclusionGroup-Membership-Everywhere.png)
 
@@ -139,12 +139,50 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 ![image](./images/ConditionalAccess-BlockMobile-OperationCountries-CltApp.png)
 
 2.	Create a CAP to block browser access from Anonymous and non-allowed countries/regions.
-    • Users: All users – Break glass account should be excluded.
-    • Cloud apps: All cloud apps.
-    • Conditions, Locations: Anonymous and non-allowed countries/regions.
-    • Conditions, Client apps: Browser.
-    • Grant: Block access.
+    - Users: All users – Break glass account should be excluded.
+    - Cloud apps: All cloud apps.
+    - Conditions, Locations: Anonymous and non-allowed countries/regions.
+    - Conditions, Client apps: Browser.
+    - Grant: Block access.
 
+![image](./images/ConditionalAccess-BlockBrowser-Anonymous.png)
+![image](./images/ConditionalAccess-BlockBrowser-Anonymous-CltApp.png)
+
+3.	Create CAPs to block browser access from a continent.
+    - Users: All users excluding exclusion group for the continent – Break glass account should be excluded.
+    - Cloud apps: All cloud apps.
+    - Conditions, Locations: continent location.
+    - Conditions, Client apps: Browser.
+    - Grant: Block access.
+
+![image](./images/ConditionalAccess-BlockBrowser-Continent-1.png)
+![image](./images/ConditionalAccess-BlockBrowser-Continent-2.png)
+
+4.	Repeat previous step for each continent.
+
+5.	Create a CAP to block download from browsers outside Operation countries.
+    - Users: All users – Break glass account should be excluded.
+    - Cloud apps: All cloud apps.
+    - Conditions, Locations: Any locations, with exclusions for Operation countries and Operation countries’ IPv6.
+    - Conditions, Client apps: Browser.
+    - Session: User Conditional Access App Control, Block downloads (Preview).
+
+![image](./images/ConditionalAccess-BlockDownload-1.png)
+![image](./images/ConditionalAccess-BlockDownload-2.png)
+
+6.	Create a CAP to ask for Terms of use outside Operation countries.
+    - Users: All users – Break glass account should be excluded.
+    - Cloud apps: All cloud apps.
+    - Conditions, Locations: Any locations, with exclusions for Operation countries and Operation countries’ IPv6.
+    - Conditions, Client apps: Browser.
+    - Grant: Your terms of use for travelers.
+
+![image](./images/ConditionalAccess-Termsofuse-1.png)
+![image](./images/ConditionalAccess-Termsofuse-2.png)
+
+Your Conditional Access policies should look like this:
+
+![image](./images/ConditionalAccess-All.png)
 
 
 
