@@ -167,8 +167,12 @@ Membership of exclusion group for Everywhere
     - Conditions, Client apps: Browser.
     - Session: User Conditional Access App Control, Block downloads (Preview).
 
-![image](./images/ConditionalAccess-BlockDownload-1.png)
-![image](./images/ConditionalAccess-BlockDownload-2.png)
+<p align="center" width="100%">
+    <img width="60%" src="./images/ConditionalAccess-BlockDownload-1.png"> 
+</p>
+<p align="center" width="100%">
+    <img width="33%" src="./images/ConditionalAccess-BlockDownload-2.png"> 
+</p>
 
 6.	Create a CAP to ask for Terms of use outside Operation countries.
     - Users: All users – Break glass account should be excluded.
@@ -178,7 +182,7 @@ Membership of exclusion group for Everywhere
     - Grant: Your terms of use for travelers.
 
 <p align="center" width="100%">
-    <img width="50%" src="./images/ConditionalAccess-Termsofuse-1.png"> 
+    <img width="60%" src="./images/ConditionalAccess-Termsofuse-1.png"> 
 </p>
 <p align="center" width="100%">
     <img width="33%" src="./images/ConditionalAccess-Termsofuse-2.png"> 
