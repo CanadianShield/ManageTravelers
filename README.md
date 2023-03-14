@@ -116,9 +116,35 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
 
 
 ## Terms of use
+1. Create a new Term of use.
+2. Include all the languages that are needed.
+3. Upload the PDF for all languages added.
+4. Make sure that “Require users to expand the terms of use” is set to On.
+5. Select the expiration policy settings that you want to use.
+6. Select “Custom policy” since we will create the CAP later.
+
+![image](./images/ExclusionGrouTermsofUse-Creation.png)
 
 
 ## Conditional Access Policies
+
+1.	Create a CAP to block mobile apps and desktop clients outside Operation countries.
+    • Users: All users – Break glass account should be excluded.
+    • Cloud apps: All cloud apps.
+    • Conditions, Locations: Any locations, with exclusions for Operation countries and Operation countries’ IPv6.
+    • Conditions, Client apps: Mobile apps and desktop clients.
+    • Grant: Block access.
+
+![image](./images/ConditionalAccess-BlockMobile-OperationCountries.png)
+![image](./images/ConditionalAccess-BlockMobile-OperationCountries-CltApp.png)
+
+2.	Create a CAP to block browser access from Anonymous and non-allowed countries/regions.
+    • Users: All users – Break glass account should be excluded.
+    • Cloud apps: All cloud apps.
+    • Conditions, Locations: Anonymous and non-allowed countries/regions.
+    • Conditions, Client apps: Browser.
+    • Grant: Block access.
+
 
 
 
