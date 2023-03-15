@@ -264,6 +264,7 @@ We will solve all those points with Entitlement management by automating the pro
 
 ## Access Package
 
+### Creation
 1. Create one package for each region in your catalog.
 <p align="center" width="100%">
     <img width="60%" src="./images/AccessPackage.png"> 
@@ -279,7 +280,7 @@ We will solve all those points with Entitlement management by automating the pro
     <img width="60%" src="./images/AccessPackage-Europe-2.png"> 
 </p>
 
-4.	Requests
+4. Requests
     - Define who can ask for this package:
         - Specific users and groups: use a group that holds all your users.
         - All members (excluding guests): all identities as “member” type.
@@ -298,7 +299,6 @@ We will solve all those points with Entitlement management by automating the pro
             - You must set the number of days allowed to make the decision.
             - Require approver justification: for tracking; this parameter should be considered.
     - Enable new request: set to Yes.
-
 <p align="center" width="100%">
     <img width="60%" src="./images/AccessPackage-Europe-3.png"> 
 </p>
@@ -307,6 +307,77 @@ We will solve all those points with Entitlement management by automating the pro
     <img width="60%" src="./images/AccessPackage-Europe-4.png"> 
 </p>
 
+5.	You can request some information for the requestor. That information will be seen during the approval process.
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-5.png"> 
+</p>
+
+You can also add different languages as needed.
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-5.png"> 
+</p>
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-6.png"> 
+</p>
+
+6.	Lifecycle
+    - Expiration: define the number of days/hours or never.
+    - Users can request a specific timeline: we recommend letting the user define their period.
+    - Allow users to extend access: before the expiration, let users ask for an extension. If the user is traveling, it could be interesting to give them this opportunity.
+    - Require approval to grant extension: same approval process as initial request.
+    - Require access reviews: you can implement an access review but, in this case, it is not mandatory since an expiration is defined*.
+    * If you don’t implement an expiration period, we strongly recommend enabling and defining an Access Review to be sure users and/or groups still need access.
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-7.png"> 
+</p>
+
+7.	Custom extensions
+This section is not needed in this scenario but could help to automate some activities. We plan to elaborate on the possibilities offered in the future.
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-8.png"> 
+</p>
+
+8.	Review + create.
+Review and confirm all your parameters and then create.
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-9.png"> 
+</p>
+
+### Customization
+1. Change the name of policy
+    By default, the first policy is named “Initial Policy”, but it is not helpful and understandable, so we recommend renaming it like this: Self-service travel request.
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-10.png"> 
+</p>
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-11.png"> 
+</p>
+
+2. Separation of Duties
+You could define incompatible access packages or groups but be careful you could block some users like VIPs or people who travel regularly. We don’t recommend using this feature in this context.
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-12.png"> 
+</p>
+
+3. Assignments
+Assignments could be used by an administrator to assign an access package directly to a user, bypassing the approval process. In our context, since the user starts the process, it is not needed but it could still be used in certain cases.
+
+
+### All packages
+At the end, you should see all your packages in your catalog.
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-All.png"> 
+</p>
 
 
 # User experience
