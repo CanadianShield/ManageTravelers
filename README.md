@@ -284,9 +284,6 @@ We will solve all those points with Entitlement management by automating the pro
         - Specific users and groups: use a group that holds all your users.
         - All members (excluding guests): all identities as “member” type.
         - All users (including guests): all identities (member and guest).
-<p align="center" width="100%">
-    <img width="60%" src="./images/AccessPackage-Europe-3.png"> 
-</p>
     - Define approval parameters in the same page.
         - Require requestor justification: strongly recommended.
     - How many stages: 2
@@ -301,6 +298,11 @@ We will solve all those points with Entitlement management by automating the pro
             - You must set the number of days allowed to make the decision.
             - Require approver justification: for tracking; this parameter should be considered.
     - Enable new request: set to Yes.
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-3.png"> 
+</p>
+
 <p align="center" width="100%">
     <img width="60%" src="./images/AccessPackage-Europe-4.png"> 
 </p>
