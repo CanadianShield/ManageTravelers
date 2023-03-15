@@ -412,15 +412,44 @@ Now let’s see what the experience is for the end users, managers, and security
     <img width="33%" src="./images/ManagerXP-Request-Details-2.png"> 
 </p>
 <p align="center" width="100%">
-    <img width="60%" src="./images/ManagerXP-Request-Details-3.png"> 
+    <img width="33%" src="./images/ManagerXP-Request-Details-3.png"> 
 </p>
 
 
 ## Approver
-*In progress*
+After the manager’s approval, the security team in charge of access approval for travelers will receive an email and will be able to approve or deny. The steps will be identical to the ones done by the manager but the result will grant or deny the access for the user.
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/ManagerXP-Request-Email.png"> 
+</p>
+
+<p align="center" width="100%">
+    <img width="60%" src="./images/ManagerXP-Request-Approval.png"> 
+</p>
 
 # Success and Errors
-*In progress*
+1. Example of a sign-in error if a user tries to sign-in from a non-operation country where they are not allowed.
+<p align="center" width="100%">
+    <img width="60%" src="./images/SuccessErrors-Sign-in.png"> 
+</p>
+
+2. Example of a Term of use prompt if a user sign-in from a non-operation country where they are allowed
+<p align="center" width="100%">
+    <img width="60%" src="./images/SuccessErrors-Termsofuse.png"> 
+</p>
+
+3. Example of a Block download prompt if a user tries to download a file from a non-operation country where they are allowed
+<p align="center" width="100%">
+    <img width="60%" src="./images/SuccessErrors-DownloadBlocked.png"> 
+</p>
+
+4. Examples of a user trying to sign-in from multiple places.
+- Great Britain – User is part of the Europe exclusion: Allowed (Success at 5:17:27) with Terms of use (Interrupted at 5:15:18)
+- Japan – User is not part of the exclusion: Blocked (Failure at 4:54:15)
+- Canada – User is signing-in from an operation country: Allowed (Success at 4:52:32)
+<p align="center" width="100%">
+    <img width="60%" src="./images/SuccessErrors-Logs.png"> 
+</p>
 
 # Credit
 
