@@ -430,7 +430,7 @@ After the manager’s approval, the security team in charge of access approval f
 # Success and Errors
 1. Example of a sign-in error if a user tries to sign-in from a non-operation country where they are not allowed.
 <p align="center" width="100%">
-    <img width="60%" src="./images/SuccessErrors-Sign-in.png"> 
+    <img width="33%" src="./images/SuccessErrors-Sign-in.png"> 
 </p>
 
 2. Example of a Term of use prompt if a user sign-in from a non-operation country where they are allowed
@@ -448,7 +448,7 @@ After the manager’s approval, the security team in charge of access approval f
 - Japan – User is not part of the exclusion: Blocked (Failure at 4:54:15)
 - Canada – User is signing-in from an operation country: Allowed (Success at 4:52:32)
 <p align="center" width="100%">
-    <img width="60%" src="./images/SuccessErrors-Logs.png"> 
+    <img width="75%" src="./images/SuccessErrors-Logs.png"> 
 </p>
 
 # Credit
