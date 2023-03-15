@@ -392,7 +392,7 @@ Now let’s see what the experience is for the end users, managers, and security
 
 2. A user enters the information on how to reach them in case of a security incident, a business justification, and a specific period (optional but recommended).
 <p align="center" width="100%">
-    <img width="60%" src="./images/UserXP-AccessPackage-Justification.png"> 
+    <img width="33%" src="./images/UserXP-AccessPackage-Justification.png"> 
 </p>
 
 ## Manager
@@ -408,8 +408,8 @@ Now let’s see what the experience is for the end users, managers, and security
 
 3.	When clicking on a request, the manager will be able to see details about the request, details about the access, the approval history of the request and to approve or deny the request with a justification.
 <p align="center" width="100%">
-    <img width="60%" src="./images/ManagerXP-Request-Details-1.png">
-    <img width="60%" src="./images/ManagerXP-Request-Details-2.png"> 
+    <img width="33%" src="./images/ManagerXP-Request-Details-1.png">
+    <img width="33%" src="./images/ManagerXP-Request-Details-2.png"> 
 </p>
 <p align="center" width="100%">
     <img width="60%" src="./images/ManagerXP-Request-Details-3.png"> 
