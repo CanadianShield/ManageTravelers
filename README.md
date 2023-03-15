@@ -287,7 +287,6 @@ We will solve all those points with Entitlement management by automating the pro
 <p align="center" width="100%">
     <img width="60%" src="./images/AccessPackage-Europe-3.png"> 
 </p>
-
     - Define approval parameters in the same page.
         - Require requestor justification: strongly recommended.
     - How many stages: 2
