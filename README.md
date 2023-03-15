@@ -385,10 +385,36 @@ At the end, you should see all your packages in your catalog.
 Now let’s see what the experience is for the end users, managers, and security approvers.
 
 ## User
-*In progress*
+1. A user accesses MyAccess.microsoft.com and clicks on Request next to the continent where they plan to travel.
+<p align="center" width="100%">
+    <img width="60%" src="./images/UserXP-AccessPackage.png"> 
+</p>
+
+2. A user enters the information on how to reach them in case of a security incident, a business justification, and a specific period (optional but recommended).
+<p align="center" width="100%">
+    <img width="60%" src="./images/UserXP-AccessPackage-Justification.png"> 
+</p>
 
 ## Manager
-*In progress*
+1.	The manager receives an email asking for the approval of the request and clicks the link to approve or deny the request.
+<p align="center" width="100%">
+    <img width="60%" src="./images/ManagerXP-Request-Email.png"> 
+</p>
+
+2.	The manager’s default browser opens the MyAccess webpage where they can see all the pending approval requests.
+<p align="center" width="100%">
+    <img width="60%" src="./images/ManagerXP-Request-Approval.png"> 
+</p>
+
+3.	When clicking on a request, the manager will be able to see details about the request, details about the access, the approval history of the request and to approve or deny the request with a justification.
+<p align="center" width="100%">
+    <img width="60%" src="./images/ManagerXP-Request-Details-1.png">
+    <img width="60%" src="./images/ManagerXP-Request-Details-2.png"> 
+</p>
+<p align="center" width="100%">
+    <img width="60%" src="./images/ManagerXP-Request-Details-3.png"> 
+</p>
+
 
 ## Approver
 *In progress*
