@@ -241,7 +241,71 @@ We will solve all those points with Entitlement management by automating the pro
 
 ## Catalog
 
-*In progress*
+1. Create a new catalog that will be used to manage all exclusion groups that we created earlier
+<p align="center" width="100%">
+    <img width="60%" src="./images/Catalog-Creation.png"> 
+</p>
+
+2. Open the new catalog and add all resources that will be available for this catalog.
+<p align="center" width="100%">
+    <img width="60%" src="./images/Catalog-Resources.png"> 
+</p>
+
+3. Add all resources (groups, applications, SharePoint sites). In our scenario, we need to add all groups we created earlier.
+<p align="center" width="100%">
+    <img width="60%" src="./images/Catalog-ResourcesAddition.png"> 
+</p>
+
+4. Content of your catalog
+<p align="center" width="100%">
+    <img width="60%" src="./images/Catalog-Resources-All.png"> 
+</p>
+
+
+## Access Package
+
+1. Create one package for each region in your catalog.
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage.png"> 
+</p>
+
+2. Define a name and a description; your users will see this information in “my access” portal.
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-1.png"> 
+</p>
+
+3. Add the corresponding group from your catalog. You also need to define the role that the user will have. In this scenario we want them to have the role “Member”.
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-2.png"> 
+</p>
+
+4.	Requests
+    - Define who can ask for this package:
+        - Specific users and groups: use a group that holds all your users.
+        - All members (excluding guests): all identities as “member” type.
+        - All users (including guests): all identities (member and guest).
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-3.png"> 
+</p>
+
+    - Define approval parameters in the same page.
+        - Require requestor justification: strongly recommended.
+    - How many stages: 2
+        - First approver
+            - Use the manager of the user (this attribute on user needs to be filled).
+            - As fallback, you can set the GIA team.
+            - You must set the number of days allowed to make the decision.
+            - Require approver justification: for tracking; this parameter should be considered.
+        - Second approver
+            - Use specific approvers.
+            - Set the travel approvers group.
+            - You must set the number of days allowed to make the decision.
+            - Require approver justification: for tracking; this parameter should be considered.
+    - Enable new request: set to Yes.
+<p align="center" width="100%">
+    <img width="60%" src="./images/AccessPackage-Europe-4.png"> 
+</p>
+
 
 
 # User experience
