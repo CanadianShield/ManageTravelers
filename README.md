@@ -379,6 +379,10 @@ At the end, you should see all your packages in your catalog.
     <img width="60%" src="./images/AccessPackage-All.png"> 
 </p>
 
+### Options for people already out of the operation countries
+We can manage those cases in two ways:
+1. Using a manual assignment done by an administrator after validating the identity of the person and the speaking with the approvers.
+2. Adding a cloud app exclusion for "Azure AD Identity Governance - Entitlement Management" for all block browser access policies except for Anonymous and non-allowed countries (CA003 to CA009); this will allow sign-ins to MyAccess.Microsoft.com, allowing people to gain access with the regular process.
 
 # User experience
 
