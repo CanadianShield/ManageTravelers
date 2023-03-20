@@ -44,7 +44,7 @@ Note that a file already present on the user’s device will not be protected by
 We want this step to be as easy as possible for everybody so we will create Terms of use that the user will need to read and accept the first time they sign-in outside the operation countries. 
 
  
-Here's a diagram showing the access for 4 different cases as examples: 
+This diagram shows 4 different cases as examples: 
 ![image](./images/CAP-diagram.png)
 
 - The first column shows a regular user without exclusions; in that case the user only has access from operation countries. 
