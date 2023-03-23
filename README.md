@@ -173,11 +173,11 @@ Two different configurations are possible for the Locations condition of this CA
     - Pro : In the case of new countries/regions, it is blocked until you assign it to the right Named Location
     - Con : You must ensure that the countries you want to block are not present in any continents; 
 
-- OPTION 1 :
+OPTION 1 :
 <p align="center" width="100%">
     <img width="60%" src="./images/ConditionalAccess-BlockBrowser-Anonymous.png"> 
 </p>
-- OPTION 2 : 
+OPTION 2 : 
 <p align="center" width="100%">
     <img width="60%" src="./images/ConditionalAccess-BlockBrowser-Anonymous-Option2.png"> 
 </p>
