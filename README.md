@@ -158,26 +158,26 @@ Membership of exclusion group for Everywhere
 </p>
 
 2.	Create a CAP to block browser access from Anonymous and non-allowed countries/regions.
-
-Two different configurations are possible for the Locations condition of this CAP:
-OPTION 1 : Using Anonymous and non-allowed countries/regions Named Location
-    - Pro : You have a well-defined list of what you block
-    - Con : In the case of new countries/regions, it is allowed for browser access until you add it to the right Named Location
-OPTION 2 : Using Any location except continents and operation countries
-    -Pro : In the case of new countries/regions, it is blocked until you assign it to the right Named Location
-    -Con : You must ensure that the countries you want to block are not present in any continents; 
-
     - Users: All users – Break glass account should be excluded.
     - Cloud apps: All cloud apps.
     - OPTION 1 : Conditions, Locations: Anonymous and non-allowed countries/regions.
     - OPTION 2 : Conditions, Locations: Any locations, with exclusions for every continent, Operation countries and Operation countries’ IPv6.
     - Conditions, Client apps: Browser.
     - Grant: Block access.
-OPTION 1 :
+
+Two different configurations are possible for the Locations condition of this CAP.
+- OPTION 1 : Using Anonymous and non-allowed countries/regions Named Location
+    - Pro : You have a well-defined list of what you block
+    - Con : In the case of new countries/regions, it is allowed for browser access until you add it to the right Named Location
+- OPTION 2 : Using Any location except continents and operation countries
+    - Pro : In the case of new countries/regions, it is blocked until you assign it to the right Named Location
+    - Con : You must ensure that the countries you want to block are not present in any continents; 
+
+- OPTION 1 :
 <p align="center" width="100%">
     <img width="60%" src="./images/ConditionalAccess-BlockBrowser-Anonymous.png"> 
 </p>
-OPTION 2 : 
+- OPTION 2 : 
 <p align="center" width="100%">
     <img width="60%" src="./images/ConditionalAccess-BlockBrowser-Anonymous-Option2.png"> 
 </p>
