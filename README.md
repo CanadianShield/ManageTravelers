@@ -166,12 +166,12 @@ Membership of exclusion group for Everywhere
     - Grant: Block access.
 
 Two different configurations are possible for the Locations condition of this CAP.
-- OPTION 1 : Using Anonymous and non-allowed countries/regions Named Location
-    - Pro : You have a well-defined list of what you block
-    - Con : In the case of new countries/regions, it is allowed for browser access until you add it to the right Named Location
-- OPTION 2 : Using Any location except continents and operation countries
-    - Pro : In the case of new countries/regions, it is blocked until you assign it to the right Named Location
-    - Con : You must ensure that the countries you want to block are not present in any continents; 
+- OPTION 1 : Using Anonymous and non-allowed countries/regions Named Location.
+    - Pro : You have a well-defined list of what you block.
+    - Con : In the case of new countries/regions, it is allowed for browser access until you add it to the right Named Location.
+- OPTION 2 : Using Any location except continents and operation countries.
+    - Pro : In the case of new countries/regions, it is blocked until you assign it to the right Named Location.
+    - Con : You must ensure that the countries you want to block are not present in any continents.
 
 OPTION 1 :
 <p align="center" width="100%">
