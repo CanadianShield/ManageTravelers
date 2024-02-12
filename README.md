@@ -70,12 +70,8 @@ There are other CAPs that would be recommended (asking for MFA, blocking legacy 
     - You must ensure that a country is not part of two continents Locations. 
 2. We create a new Countries Location for anonymous countries/regions. 
     - We need to check the “Include unknown countries/regions”. 
-        - IPv6 addresses fall into that category, see step 4. 
     - We also need to have at least one country selected. 
 3. We need to create a Countries Location for our countries of operation. 
-4. We create an IP range's location containing the IPv6 addresses of our countries of operation. 
-    - You can split in multiple Named Locations to make it easier to manage. 
-    - It must not be as a Trusted Location.
 
 Example for Europe
 <p align="center" width="100%">
@@ -90,11 +86,6 @@ Example of anonymous and non-allowed
 Example of Operation countries
 <p align="center" width="100%">
     <img width="60%" src="./images/NamedLocation-Example-OperationCountries.png"> 
-</p>
-
-Example of Operation countries range of IPv6
-<p align="center" width="100%">
-    <img width="60%" src="./images/NamedLocation-Example-OperationCountries-ipv6.png"> 
 </p>
 
 View of all locations created
@@ -147,7 +138,7 @@ Membership of exclusion group for Everywhere
 1.	Create a CAP to block mobile apps and desktop clients outside Operation countries.
     - Users: All users – Break glass account should be excluded.
     - Cloud apps: All cloud apps.
-    - Conditions, Locations: Any locations, with exclusions for Operation countries and Operation countries’ IPv6.
+    - Conditions, Locations: Any locations, with exclusions for Operation countries.
     - Conditions, Client apps: Mobile apps and desktop clients.
     - Grant: Block access.
 <p align="center" width="100%">
@@ -161,7 +152,7 @@ Membership of exclusion group for Everywhere
     - Users: All users – Break glass account should be excluded.
     - Cloud apps: All cloud apps.
     - OPTION 1 : Conditions, Locations: Anonymous and non-allowed countries/regions.
-    - OPTION 2 : Conditions, Locations: Any locations, with exclusions for every continent, Operation countries and Operation countries’ IPv6.
+    - OPTION 2 : Conditions, Locations: Any locations, with exclusions for every continent and Operation countries.
     - Conditions, Client apps: Browser.
     - Grant: Block access.
 
@@ -203,7 +194,7 @@ OPTION 2 :
 5.	Create a CAP to block download from browsers outside Operation countries.
     - Users: All users – Break glass account should be excluded.
     - Cloud apps: All cloud apps.
-    - Conditions, Locations: Any locations, with exclusions for Operation countries and Operation countries’ IPv6.
+    - Conditions, Locations: Any locations, with exclusions for Operation countries.
     - Conditions, Client apps: Browser.
     - Session: User Conditional Access App Control, Block downloads (Preview).
 <p align="center" width="100%">
@@ -216,7 +207,7 @@ OPTION 2 :
 6.	Create a CAP to ask for Terms of use outside Operation countries.
     - Users: All users – Break glass account should be excluded.
     - Cloud apps: All cloud apps.
-    - Conditions, Locations: Any locations, with exclusions for Operation countries and Operation countries’ IPv6.
+    - Conditions, Locations: Any locations, with exclusions for Operation countries.
     - Conditions, Client apps: Browser.
     - Grant: Your terms of use for travelers.
 <p align="center" width="100%">
