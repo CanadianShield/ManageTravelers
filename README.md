@@ -110,7 +110,7 @@ Example of exclusion group for Europe
     <img width="60%" src="./images/ExclusionGroup-Creation-Europe.png"> 
 </p>
 
-All exclusion group
+All exclusion groups
 <p align="center" width="100%">
     <img width="60%" src="./images/ExclusionGroup-All.png"> 
 </p>
@@ -120,6 +120,22 @@ Membership of exclusion group for Everywhere
     <img width="60%" src="./images/ExclusionGroup-Membership-Everywhere.png"> 
 </p>
 
+## Securing Exclusion groups
+1. We will then create a restricted administrative unit to remove administrative access to the exclusion groups.
+    - The administrative unit must set to Restricted management administrative unit.
+    - The assigned roles must be empty.
+    - A good name and description should be considered.
+2. We must add all the exclusion groups to the restricted administrative unit.
+
+Example of administrative unit creation
+<p align="center" width="100%">
+    <img width="60%" src="./images/AdministrativeUnit-1.png"> 
+</p>
+
+All exclusion groups that have been added to the restricted administrative unit
+<p align="center" width="100%">
+    <img width="60%" src="./images/AdministrativeUnit-Add groups2.png"> 
+</p>
 
 ## Terms of use
 1. Create a new Term of use.
